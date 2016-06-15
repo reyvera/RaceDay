@@ -1,16 +1,42 @@
-import React, {Component} from 'react';
+import React, {Component, PropTypes} from 'react';
 import TrackerReact from 'meteor/ultimatejs:tracker-react';
 
-import Map from 'google-maps-react';
+import GoogleMap from 'google-map-react';
 
-export default class MapWrapper extends TrackerReact(Component) {
-	render() {
-		return (
-			<div>
-				<h1>Map goes here!</h1>
-				<Map google={this.props.google} zoom={14}>
-				</Map>
-			</div>
-		)
+export default class MapWrapper extends Component {
+  constructor(props) {
+    super(props);
+  }
+
+	createMapOptions() {
+		return{
+			minZoomOverride: true,
+    	minZoom: 2,
+		}
 	}
+
+  render() {
+    return (
+			<div style={{height: '30em', width: '80%'}}>
+				<GoogleMap
+				 defaultCenter={this.props.center}
+				 center={{lat: 35.3428366, lng: -119.1099741}}
+				 defaultZoom={this.props.zoom}
+				 options={this.createMapOptions}
+				 bootstrapURLKeys={{
+					 key: 'AIzaSyAh3cQ8hG1PN_ZLLC_GYP0zWhDSsYD4Mbk',
+				 }}>
+			 </GoogleMap>
+			</div>
+    );
+  }
 }
+
+MapWrapper.propTypes = {
+	center: PropTypes.any,
+	zoom: PropTypes.number,
+};
+MapWrapper.defaultProps = {
+	center: {lat: 59.938043, lng: 30.337157},
+	zoom: 15,
+};

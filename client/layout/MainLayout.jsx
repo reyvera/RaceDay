@@ -3,7 +3,7 @@ import React from 'react';
 export const MainLayout = ({content}) => (
 	<div>
 		<header>
-			<h2>Meact: The Meteor-React Boilerplate</h2>
+			<h2>raceDay: The official athlete tracking app!</h2>
 			<nav>
 				<a href="/">Map</a>
 			</nav>
