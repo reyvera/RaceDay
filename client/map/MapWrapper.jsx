@@ -1,7 +1,7 @@
 import React, {Component, PropTypes} from 'react';
-import TrackerReact from 'meteor/ultimatejs:tracker-react';
 
 import GoogleMap from 'google-map-react';
+import LocationMarkers from './MapMarkers';
 
 export default class MapWrapper extends Component {
   constructor(props) {
@@ -17,7 +17,7 @@ export default class MapWrapper extends Component {
 
   render() {
     return (
-			<div style={{height: '30em', width: '80%'}}>
+			<div className="mapWrapper">
 				<GoogleMap
 				 defaultCenter={this.props.center}
 				 center={{lat: 35.3428366, lng: -119.1099741}}
@@ -26,6 +26,7 @@ export default class MapWrapper extends Component {
 				 bootstrapURLKeys={{
 					 key: 'AIzaSyAh3cQ8hG1PN_ZLLC_GYP0zWhDSsYD4Mbk',
 				 }}>
+				 <LocationMarkers lat={35.3428366} lng={-119.1099741} text={'A'} />
 			 </GoogleMap>
 			</div>
     );
