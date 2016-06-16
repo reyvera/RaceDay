@@ -1,11 +1,12 @@
 import React, {Component, PropTypes} from 'react';
+import TrackerReact from 'meteor/ultimatejs:tracker-react';
 
 import GoogleMap from 'google-map-react';
 import LocationMarkers from './MapMarkers';
 
 Markers = new Mongo.Collection("markers");
 
-export default class MapWrapper extends Component {
+export default class MapWrapper extends TrackerReact(Component) {
   constructor(props) {
     super(props);
   }
