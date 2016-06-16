@@ -3,6 +3,8 @@ import React, {Component, PropTypes} from 'react';
 import GoogleMap from 'google-map-react';
 import LocationMarkers from './MapMarkers';
 
+Markers = new Mongo.Collection("markers");
+
 export default class MapWrapper extends Component {
   constructor(props) {
     super(props);
