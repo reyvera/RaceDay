@@ -34,16 +34,6 @@ export default class MapWrapper extends TrackerReact(Component) {
 	}
 
   render() {
-		// myLat = this.markers().map((marker) => {
-		// 	return marker.lat
-		// });
-		// myLng = this.markers().map((marker) => {
-		// 	return marker.lng
-		// });
-		// console.log("MapWrapper: " + myLat);
-		// console.log("MapWrapper: " + myLng);
-
-
 		const myPlaces = this.markers().map(marker => {
 			const {...coords} = marker;
 
