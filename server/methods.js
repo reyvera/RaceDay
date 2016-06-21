@@ -1,8 +1,8 @@
 Meteor.methods({
 	addLocation(lat, lng) {
 		Markers.insert({
-			userLat: lat,
-			userLng: lng
+			lat: Number(lat),
+			lng: Number(lng)
 		});
 	}
 });

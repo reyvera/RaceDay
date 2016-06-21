@@ -34,27 +34,39 @@ export default class MapWrapper extends TrackerReact(Component) {
 	}
 
   render() {
-    return (
+		// myLat = this.markers().map((marker) => {
+		// 	return marker.lat
+		// });
+		// myLng = this.markers().map((marker) => {
+		// 	return marker.lng
+		// });
+		// console.log("MapWrapper: " + myLat);
+		// console.log("MapWrapper: " + myLng);
+
+
+		const myPlaces = this.markers().map(marker => {
+			const {...coords} = marker;
+
+			return (
+				<MapMarkers key={marker._id}
+										{...coords} />
+			);
+		});
+
+		return (
 			<div className="mapWrapper">
 				<LatLngForm />
-
 				<GoogleMap
-				 	defaultCenter={this.props.center}
-				 	center={{lat: 35.3428366, lng: -119.1099741}}
-				 	defaultZoom={this.props.zoom}
-				 	options={this.createMapOptions}
-				 	bootstrapURLKeys={{
+					center={this.props.center}
+					defaultZoom={this.props.zoom}
+					options={this.createMapOptions}
+					bootstrapURLKeys={{
 					 key: 'AIzaSyAh3cQ8hG1PN_ZLLC_GYP0zWhDSsYD4Mbk',
-				 	}}>
-				 	<MapMarkers lat={35.3428366} lng={-119.1099741} text={'A'} />
-			 	</GoogleMap>
-				<ul>
-					{this.markers().map((marker) => {
-						return "Lat:" + marker.userLat + ", Lng:" + marker.userLng + "; "
-					})}
-				</ul>
+					}}>
+					{myPlaces}
+				</GoogleMap>
 			</div>
-    );
+		);
   }
 }
 
@@ -63,6 +75,6 @@ MapWrapper.propTypes = {
 	zoom: PropTypes.number,
 };
 MapWrapper.defaultProps = {
-	center: {lat: 59.938043, lng: 30.337157},
-	zoom: 15,
+	center: [35.3428366, -119.1099741],
+	zoom: 2,
 };
