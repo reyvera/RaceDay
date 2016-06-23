@@ -1,5 +1,6 @@
 import React, {Component, PropTypes} from 'react';
 import TrackerReact from 'meteor/ultimatejs:tracker-react';
+import controllable from 'react-controllables';
 
 import GoogleMap from 'google-map-react';
 import MapMarkers from './MapMarkers';
@@ -18,6 +19,21 @@ export default class MapWrapper extends TrackerReact(Component) {
 		}
   }
 
+	componentDidMount() {
+		if(navigator.geolocation) {
+			navigator.geolocation.getCurrentPosition(
+				(position) => {
+					this.setState({
+						currentRegion: [
+          		position.coords.latitude,
+          		position.coords.longitude,
+        		]
+					});
+				}
+			);
+		}
+	}
+
 	componentWillUnmount() {
 		this.state.subscription.markers.stop();
 	}
@@ -34,16 +50,9 @@ export default class MapWrapper extends TrackerReact(Component) {
 	}
 
   render() {
-		// myLat = this.markers().map((marker) => {
-		// 	return marker.lat
-		// });
-		// myLng = this.markers().map((marker) => {
-		// 	return marker.lng
-		// });
-		// console.log("MapWrapper: " + myLat);
-		// console.log("MapWrapper: " + myLng);
+		userLocation = this.state.currentRegion;
 
-
+		// Map user markers in database to their own respective <MapMarkers /> tag.
 		const myPlaces = this.markers().map(marker => {
 			const {...coords} = marker;
 
@@ -53,20 +62,30 @@ export default class MapWrapper extends TrackerReact(Component) {
 			);
 		});
 
-		return (
-			<div className="mapWrapper">
-				<LatLngForm />
-				<GoogleMap
-					center={this.props.center}
-					defaultZoom={this.props.zoom}
-					options={this.createMapOptions}
-					bootstrapURLKeys={{
-					 key: 'AIzaSyAh3cQ8hG1PN_ZLLC_GYP0zWhDSsYD4Mbk',
-					}}>
-					{myPlaces}
-				</GoogleMap>
-			</div>
-		);
+		if(userLocation) {
+			return (
+				<div className="mapWrapper">
+					<LatLngForm />
+					<GoogleMap
+						defaultCenter={this.props.center}
+						center={userLocation}
+						defaultZoom={this.props.zoom}
+						options={this.createMapOptions}
+						bootstrapURLKeys={{ key: 'AIzaSyAh3cQ8hG1PN_ZLLC_GYP0zWhDSsYD4Mbk'}} >
+
+						{myPlaces}
+					</GoogleMap>
+				</div>
+			);
+		}
+		else {
+			return (
+				<div className="mapWrapper">
+					<h1>Loading Map...</h1>
+					<p>Please allow for location access to view map.</p>
+				</div>
+			);
+		}
   }
 }
 
@@ -75,6 +94,6 @@ MapWrapper.propTypes = {
 	zoom: PropTypes.number,
 };
 MapWrapper.defaultProps = {
-	center: [35.3428366, -119.1099741],
-	zoom: 2,
+	center: [0, 0],
+	zoom: 8,
 };
