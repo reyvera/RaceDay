@@ -1,0 +1,3 @@
+rootProject.name = 'raceDay_ReactNative'
+
+include ':app'
