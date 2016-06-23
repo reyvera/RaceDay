@@ -57,11 +57,11 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/packages/modules.js?hash=2454a55410f18113abb6fe2de2c795de2d5f75f1",
+      "url": "/packages/modules.js?hash=39511f88346ea7c2c2c27118924a5571f6931126",
       "sourceMap": "packages/modules.js.map",
-      "sourceMapUrl": "/packages/2454a55410f18113abb6fe2de2c795de2d5f75f1.map",
-      "size": 3814697,
-      "hash": "2454a55410f18113abb6fe2de2c795de2d5f75f1"
+      "sourceMapUrl": "/packages/39511f88346ea7c2c2c27118924a5571f6931126.map",
+      "size": 3824501,
+      "hash": "39511f88346ea7c2c2c27118924a5571f6931126"
     },
     {
       "path": "packages/es5-shim.js",
