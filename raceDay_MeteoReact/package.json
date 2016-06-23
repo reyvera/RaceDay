@@ -5,7 +5,7 @@
     "start": "meteor run"
   },
   "dependencies": {
-    "google-map-react": "^0.14.4",
+    "google-map-react": "^0.14.8",
     "meteor-node-stubs": "~0.2.0",
     "react": "^15.1.0",
     "react-controllables": "^0.6.0",
