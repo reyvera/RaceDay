@@ -3,17 +3,14 @@ import {
   AppRegistry,
   StyleSheet,
   Text,
-  View
+  View,
+	MapView
 } from 'react-native';
 
 class raceDay_ReactNative extends Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to raceDay!
-        </Text>
-      </View>
+			<MapView style={styles.map} />
     );
   }
 }
@@ -35,6 +32,9 @@ const styles = StyleSheet.create({
     color: '#333333',
     marginBottom: 5,
   },
+	map: {
+		flex: 1,
+	},
 });
 
 AppRegistry.registerComponent('raceDay_ReactNative', () => raceDay_ReactNative);
