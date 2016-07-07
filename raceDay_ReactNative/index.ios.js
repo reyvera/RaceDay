@@ -68,6 +68,7 @@ const styles = StyleSheet.create({
     borderRadius: 5,
   },
 	coords: {
+		flex: 1,
     // fontWeight: 'bold',
     fontSize: 20,
     // color: '#dddddd',
