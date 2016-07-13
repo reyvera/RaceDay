@@ -24,7 +24,6 @@ const styles = StyleSheet.create({
 const Home = (props) => {
   return (
     <View style={styles.container}>
-      
 			<AthleteMap />
     </View>
   );

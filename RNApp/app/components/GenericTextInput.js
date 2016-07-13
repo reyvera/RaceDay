@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
   },
   inputWrapper: {
     backgroundColor: COLORS.inputBackground,
-    width: window.width,
+    width: window.width - 30,
   },
 });
 

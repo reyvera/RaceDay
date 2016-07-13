@@ -42,6 +42,9 @@ const styles = StyleSheet.create({
     fontWeight: '600',
     fontStyle: 'italic',
   },
+	inputWrapper: {
+		width: 20,
+	},
   subHeaderText: {
     fontSize: 20,
     color: COLORS.headerText,
@@ -61,8 +64,7 @@ const SignIn = (props) => {
           source={Logo}
         />
 
-        <Text style={styles.headerText}>React Native Meteor</Text>
-        <Text style={styles.subHeaderText}>Boilerplate</Text>
+				<Text style={styles.headerText}>RaceDay</Text>
       </View>
 
       <InputWrapper>
