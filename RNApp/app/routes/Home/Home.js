@@ -3,6 +3,8 @@ import { StyleSheet, Text, View } from 'react-native';
 import { COLORS } from '../../styles';
 import Button from '../../components/Button';
 
+import AthleteMap from './AthleteMap';
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -22,13 +24,8 @@ const styles = StyleSheet.create({
 const Home = (props) => {
   return (
     <View style={styles.container}>
-      <Text style={styles.main}>
-        Home
-      </Text>
-      <Button
-        text="Details"
-        onPress={props.onDetailsPress}
-      />
+      
+			<AthleteMap />
     </View>
   );
 };
