@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {
   StyleSheet,
   Text,
-  View
+  View,
 } from 'react-native';
 
 import MapView from 'react-native-maps';
@@ -13,31 +13,34 @@ class AthleteMap extends Component {
 		this.state = {
 			position: {
 				coords: {}
-			}
+			},
+			region: {
+      	latitude: 37.78825,
+      	longitude: -122.4324,
+      	latitudeDelta: 0.0922,
+      	longitudeDelta: 0.0421,
+    	}
 		};
 	}
 
 	componentDidMount() {
 		navigator.geolocation.getCurrentPosition(
-      (position) => this.setState({position}),
+      (position) => {},
       (error) => alert(error.message),
-      {enableHighAccuracy: true, timeout: 20000, maximumAge: 1000}
+      {enableHighAccuracy: true, timeout: 1000, maximumAge: 0}
     );
-    navigator.geolocation.watchPosition((position) => {
-      this.setState({position});
-    });
+    navigator.geolocation.watchPosition(
+			(position) => this.setState({position}),
+      (error) => alert(error.message),
+      {enableHighAccuracy: true, timeout: 1000, maximumAge: 0}
+		);
 	}
 
   render() {
     return (
 			<View style={styles.container}>
 				<MapView style={styles.map}
-					initialRegion={{
-						latitude: 37.78825,
-						longitude: -122.4324,
-						latitudeDelta: 0.0922,
-						longitudeDelta: 0.0421,
-					}}
+					initialRegion={this.state.region}
 					showsUserLocation={true}
 					followsUserLocation={true} />
 
