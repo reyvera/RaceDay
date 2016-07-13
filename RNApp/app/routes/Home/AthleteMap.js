@@ -62,11 +62,7 @@ const styles = StyleSheet.create({
     right: 0,
     left: 0,
     top: 0,
-    bottom: 60,
-    margin: 10,
-    borderWidth: 1,
-    borderColor: '#dddddd',
-    borderRadius: 5,
+    bottom: 0,
   },
 	coords: {
 		flex: 1,
@@ -75,7 +71,7 @@ const styles = StyleSheet.create({
     // color: '#dddddd',
     textAlign: 'center',
     alignSelf: 'flex-end',
-    marginBottom: 24,
+    marginBottom: 0,
   },
 });
 

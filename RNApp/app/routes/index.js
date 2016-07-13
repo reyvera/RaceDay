@@ -10,9 +10,7 @@ const Routes = {
         return <Home navigator={navigator} />;
       },
 
-      getTitle() {
-        return 'Home';
-      },
+			showNavigationBar: false,
     };
   },
   getDetailsRoute() {
