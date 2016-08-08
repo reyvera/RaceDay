@@ -1,4 +1,4 @@
-# Project Name
+# RaceDay
 
 TODO: Write a project description
 
