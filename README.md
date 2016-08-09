@@ -27,6 +27,7 @@ react-mounter```
 
 ##### iOS:
 With _Meteor_ server running, in a new tab:
+
 1. ```cd ../RNApp```
 2. Run ```npm install```
 3. Launch app on simulator: ```react-native run-ios```
