@@ -38,3 +38,15 @@ With _Meteor_ server running, in a new tab:
 1. Run ```android avd``` command.
 2. Select emulator, then click start button to run.
 3. In new terminal tab, run ```react-native run-android```.
+
+## History
+
+TODO: Write history
+
+## Credits
+
+TODO: Write credits
+
+## License
+
+TODO: Write license
