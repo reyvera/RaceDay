@@ -10,11 +10,13 @@ TODO: Write a project description
 
 ## Usage
 
-### Meteor
+**NOTE:** Must run _Meteor_ server before running _React Native_ app, otherwise a silent error will occur. This is because the mobile apps are looking to connect to the Mongo database in the Meteor application's server.
+
+#### Meteor
 
 TODO: Write description for running the Meteor app
 
-### React Native
+#### React Native
 
 TODO: Write description for running the React Native app
 
