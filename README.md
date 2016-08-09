@@ -10,7 +10,13 @@ TODO: Write a project description
 
 ## Usage
 
-TODO: Write usage instructions
+### Meteor
+
+TODO: Write description for running the Meteor app
+
+### React Native
+
+TODO: Write description for running the React Native app
 
 ## Contributing
 
