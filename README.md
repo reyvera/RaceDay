@@ -1,6 +1,6 @@
 # RaceDay
 
-Do you enjoy running marathons, but your loved ones refuse to _refuse_ to wait at the finish line for you because you take too long? This app aims to solve this issue by allowing your _fans_ to subscribe to your location tracking, and receive live updates. They can be notified at mile markers, or an estimated arrival time to the finish line (i.e. 10 minutes until you finish). Now **everyone** can cheer you on!
+Do you enjoy running marathons, but your loved ones _refuse_ to wait at the finish line for you because you take too long? This app aims to solve this issue by allowing your _fans_ to subscribe to your current location, and receive live updates. They can be notified at mile markers, or an estimated arrival time to the finish line (i.e. 10 minutes until you finish). Now **everyone** can cheer you on!
 
 ## Installation
 
