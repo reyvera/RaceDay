@@ -13,7 +13,7 @@ Do you enjoy running marathons, but your loved ones _refuse_ to wait at the fini
 
 **NOTE:** Must run _Meteor_ server before running _React Native_ app, otherwise a silent error will occur. This is because the mobile apps are looking to connect to the Mongo database in the Meteor application's server.
 
-#### Meteor
+### Meteor
 
 1. Open terminal.
 2. ```cd ./MeteorApp```
@@ -23,7 +23,7 @@ react-mounter```
 4. Once server is running, go to [http://localhost:3000/](http://localhost:3000/)
 5. Leave the server running, and open a new tab in your terminal.
 
-#### React Native
+### React Native
 
 ##### iOS:
 With _Meteor_ server running, in a new tab:
