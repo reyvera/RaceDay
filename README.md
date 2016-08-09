@@ -4,7 +4,9 @@ TODO: Write a project description
 
 ## Installation
 
-TODO: Describe the installation process
+1. Follow install process for [Meteor](https://www.meteor.com/install)
+2. Follow install process for [React Native](https://facebook.github.io/react-native/docs/getting-started.html#content)
+3. Install [Sketch](https://www.sketchapp.com/) app for Mac to view design
 
 ## Usage
 
