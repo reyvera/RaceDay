@@ -15,7 +15,13 @@ Do you enjoy running marathons, but your loved ones _refuse_ to wait at the fini
 
 #### Meteor
 
-TODO: Write description for running the Meteor app
+1. Open terminal.
+2. ```cd ./MeteorApp```
+3. Run ```meteor npm install --save react react-dom react-controllables google-map-react
+react-mounter```
+3. Run the Meteor application with ```meteor``` command.
+4. Once server is running, go to [http://localhost:3000/](http://localhost:3000/)
+5. Leave the server running, and open a new tab in your terminal.
 
 #### React Native
 
