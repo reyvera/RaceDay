@@ -3,6 +3,7 @@ import Home from './Home';
 import Details from './Details';
 import Profile from './Profile';
 import Activity from './Activity';
+import Tracking from './Tracking';
 
 const Routes = {
   getHomeRoute() {
@@ -38,6 +39,15 @@ const Routes = {
     return {
       renderScene(navigator) {
         return <Activity navigator={navigator} />;
+      },
+
+      showNavigationBar: false,
+    };
+  },
+	getTrackingRoute() {
+    return {
+      renderScene(navigator) {
+        return <Tracking navigator={navigator} />;
       },
 
       showNavigationBar: false,
