@@ -1,6 +1,6 @@
-import ProfileContainer from './ProfileContainer';
-import Profile from './Profile';
+import ActivityContainer from './ActivityContainer';
+import Activity from './Activity';
 import Icon from './activity-icon.png';
 
-export { Profile, Icon };
-export default ProfileContainer;
+export { Icon, Activity };
+export default ActivityContainer;

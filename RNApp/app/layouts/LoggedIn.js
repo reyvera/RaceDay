@@ -25,7 +25,7 @@ class LoggedInLayout extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      selectedTab: 'Home',
+      selectedTab: 'Activity',
     };
   }
 
@@ -62,10 +62,10 @@ class LoggedInLayout extends React.Component {
   render() {
     return (
       <TabNavigator>
-        {this.renderTabItem('Home', Routes.getHomeRoute(), HomeIcon)}
-        {this.renderTabItem('Profile', Routes.getProfileRoute(), ProfileIcon)}
 				{this.renderTabItem('Activity', Routes.getActivityRoute(), ActivityIcon)}
 				{this.renderTabItem('Tracking', Routes.getActivityRoute(), TrackingIcon)}
+        {/* {this.renderTabItem('Home', Routes.getHomeRoute(), HomeIcon)} */}
+        {this.renderTabItem('Profile', Routes.getProfileRoute(), ProfileIcon)}
       </TabNavigator>
     );
   }
