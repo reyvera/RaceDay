@@ -69,9 +69,10 @@ const styles = StyleSheet.create({
     // fontWeight: 'bold',
     fontSize: 20,
     // color: '#dddddd',
+		// backgroundColor: 'transparent',
     textAlign: 'center',
     alignSelf: 'flex-end',
-    marginBottom: 0,
+    // marginBottom: 0,
   },
 });
 
