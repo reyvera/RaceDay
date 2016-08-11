@@ -6,7 +6,8 @@ export const MainLayout = ({content}) => (
 		<header>
 			<h2>raceDay: The official athlete tracking app!</h2>
 			<nav>
-				<a href="/">Map</a>
+				<a href="/">Home</a>
+				<a href="/map">Map</a>
 				<AccountsUI />
 			</nav>
 		</header>
