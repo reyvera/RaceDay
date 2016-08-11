@@ -53,6 +53,15 @@ const Routes = {
       showNavigationBar: false,
     };
   },
+	getHistoryRoute() {
+		return {
+			renderScene(navigator) {
+				return <Profile navigator={navigator} />;
+			},
+
+			showNavigationBar: false,
+		};
+	},
 };
 
 export default Routes;
