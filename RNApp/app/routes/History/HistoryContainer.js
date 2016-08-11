@@ -11,7 +11,7 @@ class HistoryContainer extends Component {
     const { user } = this.props;
 
     return (
-      <Profile
+      <History
         user={user}
         signOut={this.handleSignOut.bind(this)}
       />

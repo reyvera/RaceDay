@@ -1,6 +1,6 @@
-import ProfileContainer from './ProfileContainer';
-import Profile from './Profile';
+import TrackingContainer from './TrackingContainer';
+import Tracking from './Tracking';
 import Icon from './tracking-icon.png';
 
-export { Profile, Icon };
-export default ProfileContainer;
+export { Tracking, Icon };
+export default TrackingContainer;

@@ -1,9 +1,11 @@
 import React from 'react';
+
 import Home from './Home';
 import Details from './Details';
 import Profile from './Profile';
 import Activity from './Activity';
 import Tracking from './Tracking';
+import History from './History';
 
 const Routes = {
   getHomeRoute() {
@@ -56,7 +58,7 @@ const Routes = {
 	getHistoryRoute() {
 		return {
 			renderScene(navigator) {
-				return <Profile navigator={navigator} />;
+				return <History navigator={navigator} />;
 			},
 
 			showNavigationBar: false,

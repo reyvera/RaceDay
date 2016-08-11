@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
   },
 });
 
-const Profile = (props) => {
+const Tracking = (props) => {
   const { user, signOut } = props;
   let email;
 
@@ -30,20 +30,23 @@ const Profile = (props) => {
   }
 
   return (
-    <View style={styles.container}>
-      <Image style={styles.header} source={headerImage} />
-      <View style={styles.body}>
-        <Avatar email={email} />
-        <Text>{email}</Text>
-        <Button text="Sign Out" onPress={signOut} />
-      </View>
-    </View>
+		<View style={styles.container}>
+			<Image style={styles.header} source={headerImage} />
+			<View style={styles.body}>
+				{/* <Avatar email={email} />
+				<Text>{email}</Text>
+				<Button text="Sign Out" onPress={signOut} /> */}
+				<Text>
+					Tracking TAB
+				</Text>
+			</View>
+		</View>
   );
 };
 
-Profile.propTypes = {
+Tracking.propTypes = {
   user: React.PropTypes.object,
   signOut: React.PropTypes.func,
 };
 
-export default Profile;
+export default Tracking;

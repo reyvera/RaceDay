@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import Meteor, { createContainer } from 'react-native-meteor';
-import Profile from './Profile';
+import Tracking from './Tracking';
 
-class ProfileContainer extends Component {
+class TrackingContainer extends Component {
   handleSignOut() {
     Meteor.logout();
   }
@@ -11,7 +11,7 @@ class ProfileContainer extends Component {
     const { user } = this.props;
 
     return (
-      <Profile
+      <Tracking
         user={user}
         signOut={this.handleSignOut.bind(this)}
       />
@@ -19,7 +19,7 @@ class ProfileContainer extends Component {
   }
 }
 
-ProfileContainer.propTypes = {
+TrackingContainer.propTypes = {
   user: React.PropTypes.object,
 };
 
@@ -27,4 +27,4 @@ export default createContainer(() => {
   return {
     user: Meteor.user(),
   };
-}, ProfileContainer);
+}, TrackingContainer);

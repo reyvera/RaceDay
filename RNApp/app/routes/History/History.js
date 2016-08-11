@@ -40,9 +40,12 @@ const History = (props) => {
     <View style={styles.container}>
       <Image style={styles.header} source={headerImage} />
       <View style={styles.body}>
-        <Avatar email={email} />
+        {/* <Avatar email={email} />
         <Text>{email}</Text>
-        <Button text="Sign Out" onPress={signOut} />
+        <Button text="Sign Out" onPress={signOut} /> */}
+				<Text>
+					HISTORY TAB
+				</Text>
       </View>
     </View>
   );
