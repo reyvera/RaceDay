@@ -71,7 +71,9 @@ export default class MapWrapper extends TrackerReact(Component) {
 						center={userLocation}
 						defaultZoom={this.props.zoom}
 						options={this.createMapOptions}
-						bootstrapURLKeys={{ key: 'AIzaSyAh3cQ8hG1PN_ZLLC_GYP0zWhDSsYD4Mbk'}} >
+						bootstrapURLKeys={{
+							key: 'AIzaSyAh3cQ8hG1PN_ZLLC_GYP0zWhDSsYD4Mbk'
+						}} >
 
 						{myPlaces}
 					</GoogleMap>
