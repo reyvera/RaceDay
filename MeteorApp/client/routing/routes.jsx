@@ -3,28 +3,30 @@ import {mount} from 'react-mounter';
 
 import { Accounts } from 'meteor/accounts-base';
 
-import {MainLayout} from '../layout/MainLayout';
+// import {MainLayout} from '../layout/MainLayout';
+import AppContainer from '../layout/app_container';
 
 import MapWrapper from '../map/MapWrapper';
-import Home from '../home/Home';
+import {Homepage} from '../home/Home';
 
 /* Set to Username only */
 // Accounts.ui.config({
-//   passwordSignupFields: 'USERNAME_ONLY',
+//   passwordSignupFields: 'EMAIL_ONLY',
 // });
 
 FlowRouter.route('/', {
+	name: 'homepage',
 	action() {
-		mount(MainLayout, {
-			content: (<Home />)
+		mount(AppContainer, {
+			content: (props) => <Homepage {...props} />
 		})
 	}
 });
 
-FlowRouter.route('/map', {
-	action() {
-		mount(MainLayout, {
-			content: (<MapWrapper />)
-		})
-	}
-});
+// FlowRouter.route('/map', {
+// 	action() {
+// 		mount(MainLayout, {
+// 			content: (<MapWrapper />)
+// 		})
+// 	}
+// });
