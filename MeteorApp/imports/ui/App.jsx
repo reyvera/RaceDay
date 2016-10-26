@@ -97,6 +97,7 @@ App.propTypes = {
 
 export default createContainer(() => {
   Meteor.subscribe('tasks');
+  Meteor.subscribe('markers');
 
   return {
     tasks: Tasks.find({}, {sort: {createdAt: -1}}).fetch(),

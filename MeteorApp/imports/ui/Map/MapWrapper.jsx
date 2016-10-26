@@ -43,8 +43,6 @@ MapWrapper.defaultProps = {
 };
 
 export default createContainer(() => {
-  Meteor.subscribe('markers');
-
   return {
     markers: Markers.find().fetch(),
   };

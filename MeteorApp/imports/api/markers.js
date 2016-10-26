@@ -18,9 +18,13 @@ if(Meteor.isServer) {
 }
 
 Meteor.methods({
+  'test'() {
+    console.log("'test' method activated!");
+  },
   'coord.insert'(lat, lng) {
-    check(lat, String);
-    check(lng, String);
+    console.log("'coord.insert' method activated!");
+    check(lat, Number);
+    check(lng, Number);
 
     // Make sure the user is logged in before inserting a task
     if(!this.userId) {
