@@ -5,15 +5,23 @@ import {
   View,
 } from 'react-native';
 
+import Meteor, { createContainer } from 'react-native-meteor';
 import MapView from 'react-native-maps';
 
 class AthleteMap extends Component {
 	constructor(props) {
 		super(props);
+
 		this.state = {
-			position: {
+			currentPosition: {
 				coords: {}
 			},
+      initialPosition: {
+        coords: {}
+      },
+      lastPosition: {
+        coords: {}
+      },
 			region: {
       	latitude: 37.78825,
       	longitude: -122.4324,
@@ -23,18 +31,50 @@ class AthleteMap extends Component {
 		};
 	}
 
+  watchID: ?number = null;
+
 	componentDidMount() {
 		navigator.geolocation.getCurrentPosition(
-      (position) => {},
+      (position) => {
+        var initialPosition = position;
+        var currentPosition = position;
+
+        this.setState({initialPosition});
+        this.setState({currentPosition});
+
+        this.pushCoords();
+      },
       (error) => alert(error.message),
       {enableHighAccuracy: true, timeout: 1000, maximumAge: 0}
     );
     navigator.geolocation.watchPosition(
-			(position) => this.setState({position}),
+			(position) => {
+        var lastPosition = this.state.currentPosition;
+        var currentPosition = position;
+
+        this.setState({lastPosition});
+        this.setState({currentPosition});
+
+        if((this.state.currentPosition.coords.latitude != this.state.initialPosition.coords.latitude) || (this.state.currentPosition.coords.longitude != this.state.initialPosition.coords.longitude)) {
+          this.pushCoords();
+        }
+      },
       (error) => alert(error.message),
       {enableHighAccuracy: true, timeout: 1000, maximumAge: 0}
 		);
 	}
+
+  componentWillUnmount() {
+    navigator.geolocation.clearWatch(this.watchID);
+  }
+
+  pushCoords() {
+    const { markersDB } = this.props;
+
+    if(markersDB === true ) {
+      Meteor.call('coord.insert', this.state.currentPosition.coords.latitude, this.state.currentPosition.coords.longitude);
+    }
+  }
 
   render() {
     return (
@@ -44,7 +84,7 @@ class AthleteMap extends Component {
 					showsUserLocation={true}
 					followsUserLocation={true} />
 
-				<Text style={styles.coords}>{this.state.position.coords.latitude}, {this.state.position.coords.longitude}</Text>
+        <Text style={styles.coords}>{this.state.initialPosition.coords.latitude}, {this.state.initialPosition.coords.longitude}</Text>
 			</View>
     );
   }
@@ -76,4 +116,13 @@ const styles = StyleSheet.create({
   },
 });
 
-export default AthleteMap;
+AthleteMap.propTypes = {
+  markersDB: React.PropTypes.bool,
+};
+
+export default createContainer(() => {
+  const handle = Meteor.subscribe('markers');
+  return {
+    markersDB: handle.ready(),
+  };
+}, AthleteMap);

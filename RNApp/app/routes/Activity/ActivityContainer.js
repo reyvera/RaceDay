@@ -1,6 +1,6 @@
 import React from 'react';
 import Activity from './Activity';
-import Routes from '../';
+// import Routes from '../';
 
 const onDetailsPress = (navigator) => {
   return navigator.push(Routes.getDetailsRoute());
