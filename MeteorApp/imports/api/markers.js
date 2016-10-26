@@ -18,9 +18,6 @@ if(Meteor.isServer) {
 }
 
 Meteor.methods({
-  'test'() {
-    console.log("'test' method activated!");
-  },
   'coord.insert'(lat, lng) {
     console.log("'coord.insert' method activated!");
     check(lat, Number);
@@ -33,7 +30,7 @@ Meteor.methods({
 
     Markers.insert({
       owner: this.userId,
-      username: Meteor.users.findOne(this.userId).username,
+      email: Meteor.users.findOne(this.userId).emails[0].address,
       LatCoord: lat,
       LngCoord: lng,
     });
