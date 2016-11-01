@@ -63,7 +63,8 @@ class App extends Component {
     return (
       <div className="container">
         <header>
-          <h1>Todo List ({this.props.incompleteCount})</h1>
+          <h1>RaceDay ({this.props.incompleteCount})</h1>
+          <h3>The only race tracking app you will ever need!</h3>
 
           <label className="hide-completed">
             <input type="checkbox" readOnly="readOnly" checked={this.state.hideCompleted} onClick={this.toggleHideCompleted.bind(this)} />
