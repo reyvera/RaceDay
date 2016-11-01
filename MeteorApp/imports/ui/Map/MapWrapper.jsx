@@ -10,7 +10,7 @@ import {Markers} from '../../api/markers.js';
 export default class MapWrapper extends Component {
   renderMarker() {
     return this.props.markers.map((marker) => (
-      <MapMarkers key={marker._id} lat={marker.LatCoord} lng={marker.LngCoord} />
+      <MapMarkers key={marker._id} lat={marker.coords.LatCoord} lng={marker.coords.LngCoord} />
     ));
   }
 
@@ -43,7 +43,8 @@ MapWrapper.defaultProps = {
 };
 
 export default createContainer(() => {
+  var sessionOwner = Meteor.userId();
   return {
-    markers: Markers.find().fetch(),
+    markers: Markers.find({owner: sessionOwner}).fetch(),
   };
 }, MapWrapper);

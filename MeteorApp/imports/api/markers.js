@@ -31,8 +31,10 @@ Meteor.methods({
     Markers.insert({
       owner: this.userId,
       email: Meteor.users.findOne(this.userId).emails[0].address,
-      LatCoord: lat,
-      LngCoord: lng,
+      coords: {
+        LatCoord: lat,
+        LngCoord: lng,
+      },
     });
   },
 });
