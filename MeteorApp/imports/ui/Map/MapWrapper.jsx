@@ -6,7 +6,7 @@ import GoogleMap from 'google-map-react';
 import MapMarkers from './MapMarkers.jsx';
 import {Markers} from '../../api/markers.js';
 
-export default class MapWrapper extends Component {
+export class MapWrapper extends Component {
   renderMarker() {
     return this.props.markers.map((marker) => (
       <MapMarkers key={marker._id} lat={marker.coords.LatCoord} lng={marker.coords.LngCoord} />
