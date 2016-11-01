@@ -3,7 +3,6 @@ import {createContainer} from 'meteor/react-meteor-data';
 
 import GoogleMap from 'google-map-react';
 
-import LatLngForm from './LatLngForm.jsx';
 import MapMarkers from './MapMarkers.jsx';
 import {Markers} from '../../api/markers.js';
 
@@ -17,7 +16,6 @@ export default class MapWrapper extends Component {
   render() {
     return (
       <div className="map-wrapper">
-        <LatLngForm />
         <GoogleMap
           defaultCenter={this.props.defaultCenter}
           defaultZoom={this.props.zoom}
