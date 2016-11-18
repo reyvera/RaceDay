@@ -1,52 +1,36 @@
 import React from 'react';
-import { StyleSheet, Text, View, Image, Dimensions } from 'react-native';
-import Button from '../../components/Button';
-import Avatar from '../../components/Avatar';
+import { StyleSheet, Text, View } from 'react-native';
 import { COLORS } from '../../styles';
-import headerImage from './header-image.png';
+import Button from '../../components/Button';
 
-const window = Dimensions.get('window');
+import TrackingMap from './TrackingMap';
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
     backgroundColor: COLORS.background,
   },
-  header: {
-    width: window.width,
-    height: window.height * 0.4,
-  },
-  body: {
-    marginTop: -50,
-    alignItems: 'center',
+  main: {
+    fontSize: 20,
+    textAlign: 'center',
+    color: COLORS.headerText,
+    fontWeight: '400',
+    fontStyle: 'italic',
   },
 });
 
 const Tracking = (props) => {
-  const { user, signOut } = props;
-  let email;
-
-  if (user) {
-    email = user.emails[0].address;
-  }
-
   return (
-		<View style={styles.container}>
-			<Image style={styles.header} source={headerImage} />
-			<View style={styles.body}>
-				{/* <Avatar email={email} />
-				<Text>{email}</Text>
-				<Button text="Sign Out" onPress={signOut} /> */}
-				<Text>
-					Tracking TAB
-				</Text>
-			</View>
-		</View>
+    <View style={styles.container}>
+		<TrackingMap />
+    </View>
   );
 };
 
 Tracking.propTypes = {
-  user: React.PropTypes.object,
-  signOut: React.PropTypes.func,
+  onDetailsPress: React.PropTypes.func,
 };
 
 export default Tracking;

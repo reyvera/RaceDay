@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
 const Activity = (props) => {
   return (
     <View style={styles.container}>
-			<AthleteMap />
+		<AthleteMap />
     </View>
   );
 };

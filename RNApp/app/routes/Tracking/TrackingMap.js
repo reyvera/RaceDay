@@ -4,7 +4,7 @@ import {StyleSheet, Text, View} from 'react-native';
 import Meteor, {createContainer} from 'react-native-meteor';
 import MapView from 'react-native-maps';
 
-class AthleteMap extends Component {
+class TrackingMap extends Component {
 	constructor(props) {
 		super(props);
 
@@ -77,10 +77,8 @@ class AthleteMap extends Component {
 		return (
 			<View style={styles.container}>
 				<MapView style={styles.map} initialRegion={this.state.region} showsUserLocation={true} followsUserLocation={true}/>
-				
-				<View style={styles.container}>
-					<Text style={styles.activity}>Activity Display</Text>
-				</View>
+
+				<Text style={styles.coords}>Athlete Subscriptions</Text>
 			</View>
 		);
 	}
@@ -88,15 +86,10 @@ class AthleteMap extends Component {
 
 const styles = StyleSheet.create({
 	container: {
-		// flex: 1,
-		// flexDirection: 'row',
-		// justifyContent: 'center',
-		// alignItems: 'center',
-		position: 'absolute',
-		right: 0,
-		left: 0,
-		top: 0,
-		bottom: 0,
+		flex: 1,
+		flexDirection: 'row',
+		justifyContent: 'center',
+		alignItems: 'center'
 	},
 	map: {
 		position: 'absolute',
@@ -105,28 +98,23 @@ const styles = StyleSheet.create({
 		top: 0,
 		bottom: 0
 	},
-	activity: {
-		// flex: 1,
-		// alignSelf: 'flex-end',
+	coords: {
+		flex: 1,
 		// fontWeight: 'bold',
-		position: 'absolute',
-		right: 0,
-		left: 0,
-		top: 0,
-		bottom: 0,
 		fontSize: 20,
 		color: '#ffffff',
 		backgroundColor: 'rgba(0, 0, 0, 0.7)',
 		textAlign: 'center',
+		alignSelf: 'flex-end',
 		// marginBottom: 0,
 	}
 });
 
-AthleteMap.propTypes = {
+TrackingMap.propTypes = {
 	markersDB: React.PropTypes.bool
 };
 
 export default createContainer(() => {
 	const handle = Meteor.subscribe('markers');
 	return {markersDB: handle.ready()};
-}, AthleteMap);
+}, TrackingMap);
