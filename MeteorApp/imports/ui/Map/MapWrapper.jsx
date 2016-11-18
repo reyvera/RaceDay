@@ -7,6 +7,29 @@ import MapMarkers from './MapMarkers.jsx';
 import {Markers} from '../../api/markers.js';
 
 export class MapWrapper extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+
+    }
+  }
+
+  componentDidMount() {
+    if(navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          this.setState({
+            currentRegion: [
+              position.coords.latitude,
+              position.coords.longitude,
+            ]
+          });
+        }
+      );
+    }
+  }
+
   renderMarker() {
     return this.props.markers.map((marker) => (
       <MapMarkers key={marker._id} lat={marker.coords.LatCoord} lng={marker.coords.LngCoord} />
@@ -19,6 +42,7 @@ export class MapWrapper extends Component {
         <GoogleMap
           defaultCenter={this.props.defaultCenter}
           defaultZoom={this.props.zoom}
+          center={this.state.currentRegion}
           bootstrapURLKeys={{
             key: 'AIzaSyAh3cQ8hG1PN_ZLLC_GYP0zWhDSsYD4Mbk'
           }} >
