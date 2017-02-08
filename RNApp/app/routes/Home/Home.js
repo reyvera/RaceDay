@@ -25,7 +25,6 @@ const Home = (props) => {
 };
 
 Home.propTypes = {
-	onDetailsPress: React.PropTypes.func,
 };
 
 export default Home;
