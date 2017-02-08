@@ -6,6 +6,14 @@ target 'RNApp' do
 	# use_frameworks!
 
 	# Pods for RNApp
+	pod 'React', :path => '../node_modules/react-native'
+	pod 'React/RCTGeolocation', :path => '../node_modules/react-native'
+	pod 'React/RCTImage', :path => '../node_modules/react-native'
+	pod 'React/RCTNetwork', :path => '../node_modules/react-native'
+	pod 'React/RCTText', :path => '../node_modules/react-native'
+	pod 'React/RCTWebSocket', :path => '../node_modules/react-native'
+
+	pod 'RCTMapboxGL', :path => '../node_modules/react-native-mapbox-gl/ios'
 
 	target 'RNAppTests' do
 		inherit! :search_paths

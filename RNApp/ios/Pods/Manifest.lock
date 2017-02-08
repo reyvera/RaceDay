@@ -1,0 +1,39 @@
+PODS:
+  - RCTMapboxGL (5.1.0)
+  - React (0.35.0):
+    - React/Core (= 0.35.0)
+  - React/Core (0.35.0)
+  - React/RCTGeolocation (0.35.0):
+    - React/Core
+  - React/RCTImage (0.35.0):
+    - React/Core
+    - React/RCTNetwork
+  - React/RCTNetwork (0.35.0):
+    - React/Core
+  - React/RCTText (0.35.0):
+    - React/Core
+  - React/RCTWebSocket (0.35.0):
+    - React/Core
+
+DEPENDENCIES:
+  - RCTMapboxGL (from `../node_modules/react-native-mapbox-gl/ios`)
+  - React (from `../node_modules/react-native`)
+  - React/RCTGeolocation (from `../node_modules/react-native`)
+  - React/RCTImage (from `../node_modules/react-native`)
+  - React/RCTNetwork (from `../node_modules/react-native`)
+  - React/RCTText (from `../node_modules/react-native`)
+  - React/RCTWebSocket (from `../node_modules/react-native`)
+
+EXTERNAL SOURCES:
+  RCTMapboxGL:
+    :path: "../node_modules/react-native-mapbox-gl/ios"
+  React:
+    :path: "../node_modules/react-native"
+
+SPEC CHECKSUMS:
+  RCTMapboxGL: 89530d53188546e8e78999dfdc039d1b4c7041ca
+  React: d80af5410aa500d0cb1bce2cc4493a584cf2ec92
+
+PODFILE CHECKSUM: ccf44c6b76e0f2c7324c47e85e668aabf09eeedd
+
+COCOAPODS: 1.2.0
