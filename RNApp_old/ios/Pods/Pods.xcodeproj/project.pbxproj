@@ -1,0 +1,620 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2BD2E378477581BDD6CEAFEC2F3C3B72 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		49C28D0C2B1C23A870DCA07C2172EB01 /* RCTMapboxGLManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D9EC1E77F7D6447CA89E9280E5A177C /* RCTMapboxGLManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		54E0AF061D0167B96130A0D79BFE4215 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		64700F8F9078745838E79EE4E505324D /* RCTMapboxGL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B8152AE6168A62B1981E7E669358EBF /* RCTMapboxGL.m */; };
+		67467E1095D74A75DB140C12DBE547BA /* RCTMapboxGL-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 39739963F49D25F40F0750922F18F779 /* RCTMapboxGL-dummy.m */; };
+		724E5508C551612E2854BA135F7E7268 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		9ED00CF2662F0CBC91FF2F6F1C7465E2 /* Pods-RNAppTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 37979CA50B01954646FFAAA7FBAAC58B /* Pods-RNAppTests-dummy.m */; };
+		A0BB810B0AAD4374087B40EE300745A5 /* RCTMapboxGL.h in Headers */ = {isa = PBXBuildFile; fileRef = 842EB614D1E8B0BD149EAC8B88CFFB58 /* RCTMapboxGL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A8B99F699000E41B8C65755C21EEADFD /* Pods-RNApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA08684189A6B26161182952A9C50E7 /* Pods-RNApp-dummy.m */; };
+		BC48D23F690FBF53E8F63D215172541A /* RCTMapboxGLConversions.m in Sources */ = {isa = PBXBuildFile; fileRef = 449A4EE979CA4A0083E7AEBC115DA94B /* RCTMapboxGLConversions.m */; };
+		C3A0F77AE1C6ED1826A0933B4CC94B51 /* RCTMapboxGLManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E433C8A59B2BF8F598B4CB0280FF19 /* RCTMapboxGLManager.m */; };
+		F04AD222A34D2DF5AC7BB4D5030AD18B /* RCTMapboxGLConversions.h in Headers */ = {isa = PBXBuildFile; fileRef = 14E55653498A66980D95A34E6E2C8390 /* RCTMapboxGLConversions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		31DF6BFEE0F24D7065E253257968DE51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C27F3919A207A7C8AF2DABC4E79A2138;
+			remoteInfo = RCTMapboxGL;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		09453611E2DA8285CB191E394A365AE5 /* Pods-RNApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RNApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		14E55653498A66980D95A34E6E2C8390 /* RCTMapboxGLConversions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTMapboxGLConversions.h; sourceTree = "<group>"; };
+		14FBD1006C84CD44C1CB44BA3260EAF2 /* Pods-RNApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RNApp.release.xcconfig"; sourceTree = "<group>"; };
+		154B4D059557EA46E3C046AC8E630B2F /* libPods-RNApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-RNApp.a"; path = "libPods-RNApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B8152AE6168A62B1981E7E669358EBF /* RCTMapboxGL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTMapboxGL.m; sourceTree = "<group>"; };
+		37979CA50B01954646FFAAA7FBAAC58B /* Pods-RNAppTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RNAppTests-dummy.m"; sourceTree = "<group>"; };
+		38AB9CE0A29B5445040BBF0435265CAA /* Pods-RNAppTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RNAppTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		39739963F49D25F40F0750922F18F779 /* RCTMapboxGL-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RCTMapboxGL-dummy.m"; sourceTree = "<group>"; };
+		449A4EE979CA4A0083E7AEBC115DA94B /* RCTMapboxGLConversions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTMapboxGLConversions.m; sourceTree = "<group>"; };
+		522F7D5DF7BFE15566A415D16C9D1779 /* RCTMapboxGL.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RCTMapboxGL.xcconfig; sourceTree = "<group>"; };
+		588B14BEACC1BB4E4314E7DBC5DA6DCA /* Pods-RNApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RNApp-resources.sh"; sourceTree = "<group>"; };
+		61E2445857C14B3B41A37BACD41EEA31 /* Pods-RNAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RNAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6BAEFB130F616A49C1BCA2F477F0830D /* Pods-RNAppTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RNAppTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		6D9EC1E77F7D6447CA89E9280E5A177C /* RCTMapboxGLManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTMapboxGLManager.h; sourceTree = "<group>"; };
+		726D050F34B58DA473698DDFF41706A8 /* Pods-RNAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RNAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		7558EB43A333D8FDFF9065E5E5401711 /* Pods-RNAppTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RNAppTests-resources.sh"; sourceTree = "<group>"; };
+		7C4E19A4456D97BCD582C890B2BEF917 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Mapbox.framework; sourceTree = "<group>"; };
+		842EB614D1E8B0BD149EAC8B88CFFB58 /* RCTMapboxGL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTMapboxGL.h; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C6E433C8A59B2BF8F598B4CB0280FF19 /* RCTMapboxGLManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTMapboxGLManager.m; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CDA08684189A6B26161182952A9C50E7 /* Pods-RNApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RNApp-dummy.m"; sourceTree = "<group>"; };
+		CE535D0F7250A8CDE5D568E917940B67 /* Pods-RNApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RNApp-frameworks.sh"; sourceTree = "<group>"; };
+		D14660AFB34CBD70114EAA7AEB10C576 /* RCTMapboxGL-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RCTMapboxGL-prefix.pch"; sourceTree = "<group>"; };
+		D5264CCC77830494668DFDD8F5AFC7B6 /* Pods-RNApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RNApp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D58B83D4D1780559A1D5CC688A2BDE3A /* libRCTMapboxGL.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libRCTMapboxGL.a; path = libRCTMapboxGL.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E45E4156B5A430ABDF7E7574EBA4C8A2 /* libPods-RNAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-RNAppTests.a"; path = "libPods-RNAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6589424F999EA966F2F20CFD1C75423 /* Pods-RNAppTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RNAppTests-frameworks.sh"; sourceTree = "<group>"; };
+		F1B1083B0F06927CCF9202A36081011B /* Pods-RNApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RNApp.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00FB0F4D1AF94F3A7CA7B32B807A43A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				724E5508C551612E2854BA135F7E7268 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C7224F036FDA820A02556161D08EEE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54E0AF061D0167B96130A0D79BFE4215 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2CD28F7F7B111CEC39531214FD484DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BD2E378477581BDD6CEAFEC2F3C3B72 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18E24230507C39B9ABF3AF35821399FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				154B4D059557EA46E3C046AC8E630B2F /* libPods-RNApp.a */,
+				E45E4156B5A430ABDF7E7574EBA4C8A2 /* libPods-RNAppTests.a */,
+				D58B83D4D1780559A1D5CC688A2BDE3A /* libRCTMapboxGL.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4798F62DA8F30B4C2926DE6A61880035 /* RCTMapboxGL */ = {
+			isa = PBXGroup;
+			children = (
+				B2BDF71249A9A868F4B3DB2B0D0EECD0 /* Frameworks */,
+				FEFE8DA7D5A65BAA38B745242E6E85BA /* RCTMapboxGL */,
+				DF5691584F00FACB1A6B50B68AA72FB5 /* Support Files */,
+			);
+			name = RCTMapboxGL;
+			path = "../../node_modules/react-native-mapbox-gl/ios";
+			sourceTree = "<group>";
+		};
+		5B3B836EBEA9C9FDA471EEBD8335BC1E /* Pods-RNApp */ = {
+			isa = PBXGroup;
+			children = (
+				D5264CCC77830494668DFDD8F5AFC7B6 /* Pods-RNApp-acknowledgements.markdown */,
+				09453611E2DA8285CB191E394A365AE5 /* Pods-RNApp-acknowledgements.plist */,
+				CDA08684189A6B26161182952A9C50E7 /* Pods-RNApp-dummy.m */,
+				CE535D0F7250A8CDE5D568E917940B67 /* Pods-RNApp-frameworks.sh */,
+				588B14BEACC1BB4E4314E7DBC5DA6DCA /* Pods-RNApp-resources.sh */,
+				F1B1083B0F06927CCF9202A36081011B /* Pods-RNApp.debug.xcconfig */,
+				14FBD1006C84CD44C1CB44BA3260EAF2 /* Pods-RNApp.release.xcconfig */,
+			);
+			name = "Pods-RNApp";
+			path = "Target Support Files/Pods-RNApp";
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				B11D9107B0B8E81603E5202A122E68F8 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				18E24230507C39B9ABF3AF35821399FB /* Products */,
+				F5CBD6382CC6910600C60503C9F6597B /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		B11D9107B0B8E81603E5202A122E68F8 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4798F62DA8F30B4C2926DE6A61880035 /* RCTMapboxGL */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		B2BDF71249A9A868F4B3DB2B0D0EECD0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7C4E19A4456D97BCD582C890B2BEF917 /* Mapbox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CBC7DBB42141ED387088D41F00C0F69B /* Pods-RNAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				38AB9CE0A29B5445040BBF0435265CAA /* Pods-RNAppTests-acknowledgements.markdown */,
+				6BAEFB130F616A49C1BCA2F477F0830D /* Pods-RNAppTests-acknowledgements.plist */,
+				37979CA50B01954646FFAAA7FBAAC58B /* Pods-RNAppTests-dummy.m */,
+				E6589424F999EA966F2F20CFD1C75423 /* Pods-RNAppTests-frameworks.sh */,
+				7558EB43A333D8FDFF9065E5E5401711 /* Pods-RNAppTests-resources.sh */,
+				61E2445857C14B3B41A37BACD41EEA31 /* Pods-RNAppTests.debug.xcconfig */,
+				726D050F34B58DA473698DDFF41706A8 /* Pods-RNAppTests.release.xcconfig */,
+			);
+			name = "Pods-RNAppTests";
+			path = "Target Support Files/Pods-RNAppTests";
+			sourceTree = "<group>";
+		};
+		DF5691584F00FACB1A6B50B68AA72FB5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				522F7D5DF7BFE15566A415D16C9D1779 /* RCTMapboxGL.xcconfig */,
+				39739963F49D25F40F0750922F18F779 /* RCTMapboxGL-dummy.m */,
+				D14660AFB34CBD70114EAA7AEB10C576 /* RCTMapboxGL-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../../../ios/Pods/Target Support Files/RCTMapboxGL";
+			sourceTree = "<group>";
+		};
+		F5CBD6382CC6910600C60503C9F6597B /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5B3B836EBEA9C9FDA471EEBD8335BC1E /* Pods-RNApp */,
+				CBC7DBB42141ED387088D41F00C0F69B /* Pods-RNAppTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		FEFE8DA7D5A65BAA38B745242E6E85BA /* RCTMapboxGL */ = {
+			isa = PBXGroup;
+			children = (
+				842EB614D1E8B0BD149EAC8B88CFFB58 /* RCTMapboxGL.h */,
+				2B8152AE6168A62B1981E7E669358EBF /* RCTMapboxGL.m */,
+				14E55653498A66980D95A34E6E2C8390 /* RCTMapboxGLConversions.h */,
+				449A4EE979CA4A0083E7AEBC115DA94B /* RCTMapboxGLConversions.m */,
+				6D9EC1E77F7D6447CA89E9280E5A177C /* RCTMapboxGLManager.h */,
+				C6E433C8A59B2BF8F598B4CB0280FF19 /* RCTMapboxGLManager.m */,
+			);
+			name = RCTMapboxGL;
+			path = RCTMapboxGL;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		BE10C221275FE1AAE6DB79555EFE84C8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0BB810B0AAD4374087B40EE300745A5 /* RCTMapboxGL.h in Headers */,
+				F04AD222A34D2DF5AC7BB4D5030AD18B /* RCTMapboxGLConversions.h in Headers */,
+				49C28D0C2B1C23A870DCA07C2172EB01 /* RCTMapboxGLManager.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0A6F25557EC6036E08F9948BE323D88E /* Pods-RNAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32FC025EBE73262E1C0A566E61CC473F /* Build configuration list for PBXNativeTarget "Pods-RNAppTests" */;
+			buildPhases = (
+				1BA1860745C4571FAF49110D29969236 /* Sources */,
+				00FB0F4D1AF94F3A7CA7B32B807A43A5 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-RNAppTests";
+			productName = "Pods-RNAppTests";
+			productReference = E45E4156B5A430ABDF7E7574EBA4C8A2 /* libPods-RNAppTests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C27F3919A207A7C8AF2DABC4E79A2138 /* RCTMapboxGL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80940A2F5E8ABF9AC6237755F4CA42EE /* Build configuration list for PBXNativeTarget "RCTMapboxGL" */;
+			buildPhases = (
+				668D834BD0DCD74739641BA810E7557D /* Sources */,
+				D2CD28F7F7B111CEC39531214FD484DD /* Frameworks */,
+				BE10C221275FE1AAE6DB79555EFE84C8 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RCTMapboxGL;
+			productName = RCTMapboxGL;
+			productReference = D58B83D4D1780559A1D5CC688A2BDE3A /* libRCTMapboxGL.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		DB55CB703E4D8B8C92BA16BACA6940F8 /* Pods-RNApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC75C69D8790D3ACA425FF36C419C36F /* Build configuration list for PBXNativeTarget "Pods-RNApp" */;
+			buildPhases = (
+				C820935181B82B50F736AD6FA100C5C5 /* Sources */,
+				0C7224F036FDA820A02556161D08EEE8 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6BB92E152F7665EEE89BEE21D49A52FE /* PBXTargetDependency */,
+			);
+			name = "Pods-RNApp";
+			productName = "Pods-RNApp";
+			productReference = 154B4D059557EA46E3C046AC8E630B2F /* libPods-RNApp.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 18E24230507C39B9ABF3AF35821399FB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DB55CB703E4D8B8C92BA16BACA6940F8 /* Pods-RNApp */,
+				0A6F25557EC6036E08F9948BE323D88E /* Pods-RNAppTests */,
+				C27F3919A207A7C8AF2DABC4E79A2138 /* RCTMapboxGL */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1BA1860745C4571FAF49110D29969236 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9ED00CF2662F0CBC91FF2F6F1C7465E2 /* Pods-RNAppTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		668D834BD0DCD74739641BA810E7557D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67467E1095D74A75DB140C12DBE547BA /* RCTMapboxGL-dummy.m in Sources */,
+				64700F8F9078745838E79EE4E505324D /* RCTMapboxGL.m in Sources */,
+				BC48D23F690FBF53E8F63D215172541A /* RCTMapboxGLConversions.m in Sources */,
+				C3A0F77AE1C6ED1826A0933B4CC94B51 /* RCTMapboxGLManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C820935181B82B50F736AD6FA100C5C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8B99F699000E41B8C65755C21EEADFD /* Pods-RNApp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6BB92E152F7665EEE89BEE21D49A52FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RCTMapboxGL;
+			target = C27F3919A207A7C8AF2DABC4E79A2138 /* RCTMapboxGL */;
+			targetProxy = 31DF6BFEE0F24D7065E253257968DE51 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		015A368F878AC3E2CEAE21DDE8026304 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		0191122698D70C8EA8477746105C029C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61E2445857C14B3B41A37BACD41EEA31 /* Pods-RNAppTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		2DC9E33A3A499A51F5320B182B8D407B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 522F7D5DF7BFE15566A415D16C9D1779 /* RCTMapboxGL.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RCTMapboxGL/RCTMapboxGL-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		44CDBB6D11DE06DB64D6268622BDC47E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4742527D39C1072A7E69AFCCCC1905FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1B1083B0F06927CCF9202A36081011B /* Pods-RNApp.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A8121BFA0FC88E35222CA65B11860319 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 726D050F34B58DA473698DDFF41706A8 /* Pods-RNAppTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		C9489CC78EF5F32A3FB0E13639958A3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 522F7D5DF7BFE15566A415D16C9D1779 /* RCTMapboxGL.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RCTMapboxGL/RCTMapboxGL-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F03B786F48ED70C7B5C10FEA39092E4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14FBD1006C84CD44C1CB44BA3260EAF2 /* Pods-RNApp.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				015A368F878AC3E2CEAE21DDE8026304 /* Debug */,
+				44CDBB6D11DE06DB64D6268622BDC47E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32FC025EBE73262E1C0A566E61CC473F /* Build configuration list for PBXNativeTarget "Pods-RNAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0191122698D70C8EA8477746105C029C /* Debug */,
+				A8121BFA0FC88E35222CA65B11860319 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80940A2F5E8ABF9AC6237755F4CA42EE /* Build configuration list for PBXNativeTarget "RCTMapboxGL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9489CC78EF5F32A3FB0E13639958A3C /* Debug */,
+				2DC9E33A3A499A51F5320B182B8D407B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC75C69D8790D3ACA425FF36C419C36F /* Build configuration list for PBXNativeTarget "Pods-RNApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4742527D39C1072A7E69AFCCCC1905FA /* Debug */,
+				F03B786F48ED70C7B5C10FEA39092E4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

@@ -1,0 +1,16 @@
+PODS:
+  - RCTMapboxGL (5.1.0)
+
+DEPENDENCIES:
+  - RCTMapboxGL (from `../node_modules/react-native-mapbox-gl/ios`)
+
+EXTERNAL SOURCES:
+  RCTMapboxGL:
+    :path: "../node_modules/react-native-mapbox-gl/ios"
+
+SPEC CHECKSUMS:
+  RCTMapboxGL: 89530d53188546e8e78999dfdc039d1b4c7041ca
+
+PODFILE CHECKSUM: 69dc14fdc2fd1ece77f622438d4c278106f7b62d
+
+COCOAPODS: 1.1.1

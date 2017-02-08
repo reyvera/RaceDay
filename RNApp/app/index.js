@@ -4,9 +4,9 @@ import Meteor, { createContainer } from 'react-native-meteor';
 import LoggedOut from './layouts/LoggedOut';
 import LoggedIn from './layouts/LoggedIn';
 import Loading from './components/Loading';
-import config from './config';
+import settings from './config/settings';
 
-Meteor.connect(config.METEOR_URL);
+Meteor.connect(settings.METEOR_URL);
 
 const RNApp = (props) => {
   const { status, user, loggingIn } = props;
@@ -15,9 +15,8 @@ const RNApp = (props) => {
     return <Loading />;
   } else if (user !== null) {
     return <LoggedIn />;
-  } else {
-    return <LoggedOut />;
   }
+  return <LoggedOut />;
 };
 
 RNApp.propTypes = {
